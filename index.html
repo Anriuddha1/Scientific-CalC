@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <nav>MY CALCULATOR</nav>
+  <div class="calculator">
+    <div class="display">
+      <div id="info-line"></div>
+      <div id="input-line"></div>
+      <div id="output-line"></div>
+    </div>
+    <div class="info">
+      <div class="button2">
+          <button class="a1" onclick="shift()">S</button>
+          <button class="a2" >A</button>
+          <button class="a3" >M</button>
+          <button class="a4">ON</button>
+          
+          <button class="b1" > ▼ </button>
+          <button class="b2" > ► </button>
+          <button class="b3" > ◄ </button>
+          <button class="b4" > ▲ </button>
+          
+          <button class="c1">x⁻¹<div class="m">
+            <div class="sft">x!</div>
+          </div></button>
+          <button class="c2">nCr<div class="m">
+            <div class="sft">nPr</div>
+          </div></button>
+          <button class="c3">Pol(<div class="m">
+            <div class="sft">Rec(</div>
+            <div class="alf">:</div>
+          </div></button>
+          <button class="c4">x³<div class="m">
+            <div class="sft">3√</div>
+          </div></button>
+        
+      </div>
+      <div class="button1">
+          <button class="abc">a b/c<div class="m">
+            <div class="sft">d/c</div>
+          </div></button>
+          <button class="sqroot">√</button>
+          <button class="sqr">x²</button>
+          <button class="root">^<div class="m">
+            <div class="sft">x√</div>
+          </div></button>
+          <button class="power">log<div class="m">
+            <div class="sft">10^</div>
+          </div></button>
+          <button class="ln">ln<div class="m">
+            <div class="sft">e^</div>
+            <div class="alf">e</div>
+          </div></button>
+
+          <button class="mii">(-)<div class="m">
+            <div class="alf">A</div>
+          </div></button>
+          <button class="time">.,,,<div class="m">
+            <div class="sft"><--</div>
+            <div class="alf">B</div>
+          </div></button>
+          <button onclick="appendValue('')">hyp<div class="m">
+            <div class="alf">C</div>
+          </div></button>
+          <button class="sin">sin<div class="m">
+            <div class="sft">sin⁻¹</div>
+            <div class="alf">D</div>
+          </div></button>
+          <button class="cos">cos<div class="m">
+            <div class="sft">cos⁻¹</div>
+            <div class="alf">E</div>
+          </div></button>
+          <button class="tan">tan<div class="m">
+            <div class="sft"> tan⁻¹</div>
+            <div class="alf">F</div>
+          </div>
+          </button>
+
+          <button class="memo">RCL<div class="m">
+            <div class="sft">STO</div>
+          </div></button>
+          <button class="eng">ENG<div class="m">
+            <div class="sft"><--</div>
+          </div></button>
+          <button class="bs">(</button>
+          <button class="be">)<div class="m">
+            <div class="alf">X</div>
+          </div></button>
+          <button class="coma">,<div class="m">
+            <div class="sft">;</div>
+            <div class="alf">Y</div>
+          </div></button>
+          <button class="M">M+<div class="m">
+            <div class="sft">M-</div>
+            <div class="alf">M</div>
+          </div></button>
+      </div>
+      <div class="buttons">
+          <button onclick="appendValue('7')">7</button>
+          <button onclick="appendValue('8')">8</button>
+          <button onclick="appendValue('9')">9</button>
+        
+          <button class="delbtn">DEL</button>
+          <button class="acbtn">AC</button>
+
+          
+          <button onclick="appendValue('4')">4</button>
+          <button onclick="appendValue('5')">5</button>
+          <button onclick="appendValue('6')">6</button>
+          <button onclick="appendValue('*')">×</button>
+          <button onclick="appendValue('/')">÷</button>
+          
+          <button onclick="appendValue('1')">1</button>
+          <button onclick="appendValue('2')">2</button>
+          <button onclick="appendValue('3')">3</button>
+          <button onclick="appendValue('+')">+</button>
+          <button onclick="appendValue('-')">−</button>
+
+          <button class="rnd">0
+            <div class="m">
+            <div class="sft">Rnd</div>
+          </div>
+          </button>
+          <button class="dot">.<div class="m">
+            <div class="sft">Rnd#</div>
+          </div></button>
+          <button class="piii">×10^<div class="m">
+            <div class="sft">π</div>
+          </div></button>
+          <button class="ans">Ans<div class="m">
+            <div class="sft">DRG</div>
+          </div></button>
+          <button class="equal">=<div class="m">
+            <div class="sft">%</div>
+          </div></button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
